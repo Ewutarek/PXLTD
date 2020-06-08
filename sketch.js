@@ -34,23 +34,29 @@ function draw()
   let _16bit = document.getElementById("16bit"); 
   let _8bit = document.getElementById("8bit"); 
   let _2bit = document.getElementById("2bit"); 
+  let _normal = document.getElementById("normal");
 
 
   background(51);
-//   image(video,0,0);
+
+  if(_normal.checked == true)
+  {
+      image(video,0,0);
+  }
+
   video.loadPixels();
 
-  // /var totalPix = boxHeight*boxWidth;
+  var totalPix = boxHeight*boxWidth;
 
   for(var x = 0; x < video.width; x += boxWidth)
   {
       for(var y = 0; y < video.height; y += boxHeight)
       
       {
+          
+
           var red = 0, green = 0, blue = 0;
-
           var index = (x  + (y * video.width) ) * 4;
-
           red = video.pixels[index+0];
           green = video.pixels[index+1];
           blue = video.pixels[index+2];
@@ -64,7 +70,7 @@ function draw()
             } else if(_2bit.checked == true)
               {
                 fill(replace2bit(color(red, green, blue)));
-              } else{ fill(color(red, green, blue));}
+              } else{  image(video,0,0);}
 
           
 

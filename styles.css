@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    color: white;
+    
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* Jumbotron */
+.jumbotron .container{
+    text-align: center;
+}
+
+.jumbotron{
+    background-color: #000;
+}
+
+.jumbotron .container h1{
+   font-family: pixelHeading,'Courier New', Courier, monospace;
+   font-size: 90px;
+}
+
+.jumbotron .container p{
+    font-family: pixelCopy,'Courier New', Courier, monospace;
+    font-size: xx-large;
+ }
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* Card */
+div.card{
+    background-color: rgb(7, 7, 7);
+}
+
+div.card-body h5.card-title{
+    font-family: pixelCopy, 'Courier New', Courier, monospace;
+    font-size: xxx-large;
+}
+
+div.card-body p.card-text{
+    font-family: pixelCopy, 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+div.card button{
+    background-color: transparent  ;
+    border: none;
+}
+
+div.card label.btn{
+    border: solid 1px #ffff;
+    background-color: transparent;
+    font-family: pixelCopy, 'Courier New', Courier, monospace;
+    font-size: xx-large;
+
+}
+
+label.btn input[type=radio]:checked{
+    background-color: white;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* Fonts */
+
+@font-face{
+    font-family: pixelHeading;
+    src: url(fonts/blox2.ttf);
+}
+
+@font-face{
+    font-family: pixelCopy;
+    src: url(fonts/LEVIWINDOWS.TTF);
+}
+
