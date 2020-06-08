@@ -1,8 +1,12 @@
 body{
     background-color: black;
     color: white;
+    height: 100vh;
     
 }
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 /* Jumbotron */
@@ -27,7 +31,8 @@ body{
 
 /* Card */
 div.card{
-    background-color: rgb(7, 7, 7);
+    /* background-color: rgb(7, 7, 7); */
+    background-color: transparent;
 }
 
 div.card-body h5.card-title{
@@ -46,16 +51,29 @@ div.card button{
 }
 
 div.card label.btn{
-    border: solid 1px #ffff;
+    border: #ffff;
+    border-width:5px;  
+    border-style:dashed;
     background-color: transparent;
     font-family: pixelCopy, 'Courier New', Courier, monospace;
     font-size: xx-large;
 
 }
 
-label.btn input[type=radio]:checked{
+label.btn input[type=radio]:checked {
     background-color: white;
+    color: black;
 }
+
+video#pxltdBackground {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -5;
+    background-size: cover;
+    }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
