@@ -4,7 +4,18 @@ body{
     height: 100vh;
     
 }
+/* ----------------------------------------------------------------------------------------------------------- */
 
+/* background styling */
+video#pxltdBackground {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -5;
+    background-size: cover;
+    }
 
 
 /* ------------------------------------------------------------------------------------------------------------------- */
@@ -16,6 +27,8 @@ body{
 
 .jumbotron{
     background-color: #000;
+    padding: 0px;
+    margin-bottom: 0;
 }
 
 .jumbotron .container h1{
@@ -26,54 +39,56 @@ body{
 .jumbotron .container p{
     font-family: pixelCopy,'Courier New', Courier, monospace;
     font-size: xx-large;
+    margin-bottom: 0;
  }
 /* -------------------------------------------------------------------------------------------------------------------- */
 
 /* Card */
 div.card{
     /* background-color: rgb(7, 7, 7); */
-    background-color: transparent;
+    background-color: black;
+}
+
+div.card-body{
+    padding-bottom: 0px;
 }
 
 div.card-body h5.card-title{
     font-family: pixelCopy, 'Courier New', Courier, monospace;
     font-size: xxx-large;
+    margin-bottom: 0px;
 }
 
 div.card-body p.card-text{
     font-family: pixelCopy, 'Courier New', Courier, monospace;
     font-size: xx-large;
+    margin-bottom: 0px;
 }
 
 div.card button{
     background-color: transparent  ;
     border: none;
+    padding: 0;
 }
 
-div.card label.btn{
+div.card label.btn.btn-secondary{
     border: #ffff;
-    border-width:5px;  
+    border-width:2px;  
     border-style:dashed;
     background-color: transparent;
     font-family: pixelCopy, 'Courier New', Courier, monospace;
     font-size: xx-large;
+    padding-bottom: 0;
+    padding-top: 0;
+    line-height: 25px;
 
 }
 
-label.btn input[type=radio]:checked {
-    background-color: white;
+div.card label.btn.btn-secondary.active{
     color: black;
+    background-color: white;
 }
 
-video#pxltdBackground {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -5;
-    background-size: cover;
-    }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
 
@@ -88,4 +103,5 @@ video#pxltdBackground {
     font-family: pixelCopy;
     src: url(fonts/LEVIWINDOWS.TTF);
 }
+
 
