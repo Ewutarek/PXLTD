@@ -1,10 +1,10 @@
 # PXLTD
 
-![Image of blank PXTLD screen](PXLTD_blank_screenshot.png)   
+![Image of blank PXTLD screen](images/PXLTD_blank_screenshot.png)   
 
-![Image of 8bit PXTLD screen](PXLTD_8bit_screenshot.png)   
+![Image of 8bit PXTLD screen](images/PXLTD_8bit_screenshot.png)   
 
-![Image of 2bit PXTLD screen](PXLTD_2bit_screenshot.png)  
+![Image of 2bit PXTLD screen](images/PXLTD_2bit_screenshot.png)  
 
 
 ## How to use it?(very simple, I promise):
